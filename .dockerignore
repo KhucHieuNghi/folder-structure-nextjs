@@ -1,0 +1,10 @@
+next
+.editorconfig
+.eslintrc.js
+.gitignore
+.vscode
+node_modules
+npm-debug.log
+ci
+LICENSE
+README.md

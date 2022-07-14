@@ -1,0 +1,127 @@
+{
+  "plugins": ["@typescript-eslint", "@emotion"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "prettier",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    // "linebreak-style": [
+    //   2,
+    //   "unix"
+    // ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "curly": [
+      2,
+      "all"
+    ],
+    "camelcase": [
+      2,
+      {
+        "properties": "always"
+      }
+    ],
+    "eqeqeq": [
+      2,
+      "smart"
+    ],
+    "one-var-declaration-per-line": [
+      2,
+      "always"
+    ],
+    "new-cap": 2,
+    "no-case-declarations": 0,
+    // I suggest you add those two rules:
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": 1,
+    "space-in-parens": [0, "always"],
+    "template-curly-spacing": [2, "always"],
+    "array-bracket-spacing": [2, "always"],
+    "object-curly-spacing": [2, "always"],
+    "computed-property-spacing": [2, "always"],
+    "no-multiple-empty-lines": [2, {
+      "max": 1,
+      "maxEOF": 0,
+      "maxBOF": 0
+    }],
+    // "quotes": [ 1, "single", "avoid-escape" ],
+    "no-use-before-define": [2, {
+      "functions": false
+    }],
+    // "semi": [0, "never"],
+    "prefer-const": 1,
+    "react/prefer-es6-class": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-curly-spacing": [2, "always"],
+    "react/jsx-indent": [1, 2],
+    "react/prop-types": [1],
+    "react/no-array-index-key": [0],
+    "react-hooks/rules-of-hooks": 0,
+    "class-methods-use-this": [1],
+    // "no-case-declarations": [ 1 ],
+    "no-return-assign": [1],
+    "no-param-reassign": [1],
+    "no-shadow": [1],
+     // "camelcase": [ 1 ],
+    "no-underscore-dangle": [0, "always"],
+    "@next/next/no-img-element": 0,
+    "react/self-closing-comp": ["error", {
+      "component": true,
+      "html": true
+    }],
+    "no-undef": 2,
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "pathGroups": [{
+          "pattern": "react",
+          "group": "external",
+          "position": "before"
+        }],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "no-var": "error"
+  },
+  "globals": {
+    "React": "writable",
+    "JSX": "readonly",
+    "PageProps": "readonly",
+    "Icon": "readonly",
+    "google": "readonly",
+    "this": "readonly",
+    "EventListenerOrEventListenerObject": "readonly",
+    "CMSFieldsArray": "readonly",
+    "CMSPopulateArray":"readonly",
+    "KeyboardEventInit": "readonly",
+    "CMSAttribute": "readonly",
+    "IntersectionObserverInit": "readonly",
+    "ErrorPage": "readonly"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

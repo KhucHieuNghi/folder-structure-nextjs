@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+yarn enforce-branch-name '(hotfix|fix|feature|refactor|migrate|docs|chore|style|perf|vender|conflict|sync|ver)/.+' --ignore '(staging|develop|master|hotfixes)'
+yarn lint
+NODE_ENV_CUSTOM=development yarn build
